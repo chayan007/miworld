@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #custom applications for mi_world
     'users',
+    'products',
 
     #package apps for mi_world
     'rest_framework',
