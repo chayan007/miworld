@@ -8,12 +8,12 @@ from django.utils.text import slugify
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    gender = models.CharField(choices=
+    gender = models.CharField(max_length=2, choices=
         (('M', 'Male'),
          ('F', 'Female'),
          ('O', 'Others'),
         ))
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True, max_length=50)
     birth_date = models.DateField(null=True, blank=True)
     is_celeb = models.BooleanField(default=False)
     is_premium = models.BooleanField(default=False)
@@ -21,10 +21,6 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.user.first_name + ' ' + self.user.last_name
-
-    def save(self, *args, **kwargs):
-        self.slug = slugify(self.user.first_name + str(self.birth_date))
-        super(Profile, self).save(*args, **kwargs)
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
@@ -36,9 +32,9 @@ def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
 
 class Personal(models.Model):
-    display = models.ImageField(upload_to='/images/users', null=True)
+    display = models.ImageField(upload_to='images/users/', null=True)
     bio = models.TextField(null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.user.first_name
