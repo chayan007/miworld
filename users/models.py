@@ -5,11 +5,11 @@ from django.utils.text import slugify
 # Create your models here.
 
 class User(AbstractUser):
-    gender = models.CharField(choices=(
-        ('M', 'Male'),
-        ('F', 'Female'),
-        ('O', 'Others'),
-    ))
+    gender = models.CharField(choices=
+        (('M', 'Male'),
+         ('F', 'Female'),
+         ('O', 'Others'),
+        ))
     slug = models.SlugField(unique=True)
     birth_date = models.DateField(null=True, blank=True)
     is_celeb = models.BooleanField(default=False)
@@ -22,3 +22,11 @@ class User(AbstractUser):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.first_name + str(self.birth_date))
         super(User, self).save(*args, **kwargs)
+
+class Personal(models.Model):
+    display = models.ImageField(upload_to='/images/users', null=True)
+    bio = models.TextField(null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.user.first_name;
