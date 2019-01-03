@@ -1,0 +1,1 @@
+from products.api.viewsets import viewsets
