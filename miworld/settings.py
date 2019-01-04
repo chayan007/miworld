@@ -31,7 +31,6 @@ ALLOWED_HOSTS = [
     '192.168.0.102',
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,6 +47,7 @@ INSTALLED_APPS = [
 
     #package apps for mi_world
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
