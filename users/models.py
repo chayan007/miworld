@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django.utils.text import slugify
+from medias.models import Image
 
 # Create your models here.
 
@@ -32,7 +32,7 @@ def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
 
 class Personal(models.Model):
-    display = models.ImageField(upload_to='images/users/', null=True)
+    display = models.ForeignKey(Image, on_delete=models.CASCADE)
     bio = models.TextField(null=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
