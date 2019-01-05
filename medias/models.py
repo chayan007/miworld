@@ -13,7 +13,7 @@ class Image(models.Model):
 
 class Video(models.Model):
     name = models.CharField(max_length=30)
-    image = models.File(upload_to='videos/')
+    image = models.FileField()
     extension = models.CharField(max_length=5)
     memory = models.IntegerField()
 
@@ -22,7 +22,7 @@ class Video(models.Model):
 
 class Audio(models.Model):
     name = models.CharField(max_length=30)
-    image = models.FileField(upload_to='images/')
+    image = models.FileField()
     extension = models.CharField(max_length=5)
     memory = models.IntegerField()
 

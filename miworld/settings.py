@@ -25,11 +25,7 @@ SECRET_KEY = 'b$!1r7$_!ud@ffwj7lidk3d+wy8ug(&e0-ms=%x6(-5m1ka=*s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '192.168.0.105',
-    '192.168.0.104',
-    '192.168.0.102',
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -43,6 +39,8 @@ INSTALLED_APPS = [
 
     #custom applications for mi_world
     'users',
+    'medias',
+    'posts',
     'products',
 
     #package apps for mi_world
