@@ -5,6 +5,6 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 
-router.register('', PostViewSet)
+router.register('posts', PostViewSet)
 router.register('likes', LikeViewSet)
 router.register('comments', CommentViewSet)

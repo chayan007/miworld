@@ -9,7 +9,7 @@ class Post(models.Model):
     description = models.TextField(null= True, blank= True)
     views = models.IntegerField(null= True)
     slug = models.SlugField(null= True, unique= True)
-    heading = models.CharField(max_length=200)
+    task = models.CharField(max_length=200) #updated, uploaded, shared,etc..
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
@@ -26,7 +26,10 @@ class Post(models.Model):
 class Like(models.Model):
     post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
-    timestamp = models.DateTimeField(auto_created= True)
+    timestamp = models.DateTimeField(auto_now_add= True)
+
+    class Meta:
+        unique_together = ('user', 'post',)
 
     def __str__(self):
         return self.user.username + 'has like the post' + self.post.slug
@@ -35,7 +38,7 @@ class Comment(models.Model):
     comment = models.TextField()
     post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
-    timestamp = models.DateTimeField(auto_created= True)
+    timestamp = models.DateTimeField(auto_now_add= True)
 
     def __str__(self):
         return self.user.username + ' commented: ' + self.comment[:20]
