@@ -9,11 +9,3 @@ class ProductModelViewSet(viewsets.ModelViewSet):
     #list, create, retrieve, update, destroy
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-
-class ProductViewSet(viewsets.ViewSet):
-    authentication_classes = (TokenAuthentication, )
-    permission_classes = (IsAuthenticated, )
-    def list(self, request):
-        queryset = Product.objects.all()
-        serializer = ProductSerializer(queryset, many=True)
-        return Response(serializer.data)
