@@ -38,5 +38,5 @@ class Comment(models.Model):
     timestamp = models.DateTimeField(auto_created= True)
 
     def __str__(self):
-        return self.user.username + 'commented' + self.comment[:20]
+        return self.user.username + ' commented: ' + self.comment[:20]
 
