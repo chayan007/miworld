@@ -19,3 +19,11 @@ class Post(models.Model):
         if self.slug != slug:
             self.slug = slug
         return super(Post, self).save()
+
+class Like(models.Model):
+    post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_created= True)
+
+    def __str__(self):
+        return self.user.username + 'has like the post' + self.post.slug
