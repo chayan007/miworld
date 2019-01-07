@@ -30,3 +30,13 @@ class Like(models.Model):
 
     def __str__(self):
         return self.user.username + 'has like the post' + self.post.slug
+
+class Comment(models.Model):
+    comment = models.TextField()
+    post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_created= True)
+
+    def __str__(self):
+        return self.user.username + 'commented' + self.comment[:20]
+
