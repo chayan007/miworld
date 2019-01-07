@@ -38,6 +38,7 @@ class Comment(models.Model):
     comment = models.TextField()
     post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
+    hook = models.IntegerField(null=True)
     timestamp = models.DateTimeField(auto_now_add= True)
 
     def __str__(self):
