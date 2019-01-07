@@ -20,6 +20,9 @@ class Post(models.Model):
             self.slug = slug
         return super(Post, self).save()
 
+    def __str__(self):
+        return self.user.username + ' posted ' + self.slug
+
 class Like(models.Model):
     post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
