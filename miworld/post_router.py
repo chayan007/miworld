@@ -3,8 +3,8 @@ from posts.like_api.viewsets import LikeViewSet
 from posts.comment_api.viewsets import CommentViewSet
 from rest_framework import routers
 
-router = routers.DefaultRouter()
+post_router = routers.DefaultRouter()
 
-router.register('posts', PostViewSet)
-router.register('likes', LikeViewSet)
-router.register('comments', CommentViewSet)
+post_router.register('posts', PostViewSet)
+post_router.register('likes', LikeViewSet)
+post_router.register('comments', CommentViewSet)

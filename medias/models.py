@@ -8,7 +8,7 @@ class Image(models.Model):
     image = models.ImageField(upload_to='images/')
     extension = models.CharField(max_length=5)
     memory = models.IntegerField()
-    post = models.ForeignKey(Post, to_field=id, on_delete=models.CASCADE, null=True)
+    post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name
@@ -18,7 +18,7 @@ class Video(models.Model):
     image = models.FileField()
     extension = models.CharField(max_length=5)
     memory = models.IntegerField()
-    post = models.ForeignKey(Post, to_field=id, on_delete=models.CASCADE, null=True)
+    post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE, null=True)
 
 
     def __str__(self):
