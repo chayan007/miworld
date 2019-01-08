@@ -12,8 +12,8 @@ class UserViewSet(viewsets.ModelViewSet):
 class ProfileViewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
-    permission_classes = IsAuthenticated
-    authentication_classes = TokenAuthentication
+    # permission_classes = IsAuthenticated
+    # authentication_classes = TokenAuthentication
 
 class ChangePasswordView(generics.UpdateAPIView):
     """
