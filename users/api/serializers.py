@@ -5,11 +5,13 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         # fields = '__all__'
+        lookup_field = 'username'
         exclude = ('password',)
 
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
+        lookup_field = 'slug'
         fields = '__all__'
 
 class PasswordSerializer(serializers.Serializer):
