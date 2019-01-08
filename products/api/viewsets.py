@@ -9,3 +9,4 @@ class ProductModelViewSet(viewsets.ModelViewSet):
     #list, create, retrieve, update, destroy
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    lookup_field = 'slug'
