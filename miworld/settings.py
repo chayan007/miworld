@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'medias',
     'posts',
     'products',
+    'followers',
 
     #package apps for mi_world
     'rest_framework',
