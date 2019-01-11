@@ -24,6 +24,6 @@ class PostView(generics.GenericAPIView,
 
     def post(self, request):
         self.create(request)
-        notification = Notification(user= User.objects.get(id = request.POST['user']), notification= 'added a post', link= '')
+        notification = Notification(user= User.objects.get(id = request.POST['user']), notification= 'added a post')
         notification.save()
         return Response({'status' : 'true'})
