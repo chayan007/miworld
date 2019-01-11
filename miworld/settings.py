@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'medias',
     'posts',
     'products',
+    'notifications',
     'followers',
 
     #package apps for mi_world
