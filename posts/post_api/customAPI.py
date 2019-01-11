@@ -1,5 +1,6 @@
 from rest_framework import views, mixins, generics
 from medias.models import Image
+from medias.image_api.serializers import ImageSerializer
 from .serializers import PostSerializer
 
 class ActualPost(generics.GenericAPIView,
