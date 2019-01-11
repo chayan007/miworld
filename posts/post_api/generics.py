@@ -1,5 +1,4 @@
-from rest_framework import generics
-from rest_framework import mixins
+from rest_framework import generics, mixins
 from rest_framework.response import Response
 from .serializers import PostSerializer
 from posts.models import Post

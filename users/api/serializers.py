@@ -12,6 +12,8 @@ class UserSerializer(serializers.ModelSerializer):
         exclude = ('password',)
 
 class ProfileSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+
     class Meta:
         model = Profile
         lookup_field = 'slug'
