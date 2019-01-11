@@ -8,3 +8,6 @@ class PostView(generics.GenericAPIView, mixins.ListModelMixin):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
 
+    def __get__(self, instance, owner):
+        return self.list(request)
+
