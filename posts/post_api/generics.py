@@ -11,6 +11,8 @@ class PostView(generics.GenericAPIView,
                mixins.ListModelMixin,
                mixins.RetrieveModelMixin,
                mixins.CreateModelMixin,
+               mixins.UpdateModelMixin,
+               mixins.DestroyModelMixin
                ):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
@@ -27,3 +29,12 @@ class PostView(generics.GenericAPIView,
         notification = Notification(user= User.objects.get(id = request.POST['user']), notification= 'added a post')
         notification.save()
         return Response({'status' : 'true'})
+
+    def put(self, request, id=None):
+        return self.update(request, id)
+
+    def delete(self, request, id=None):
+        return self.destroy(request, id)
+
+    def patch(self, request, id):
+        return self.partial_update(request, id)
