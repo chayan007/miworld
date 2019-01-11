@@ -10,6 +10,6 @@ post_router.register('posts', PostViewSet)
 post_router.register('likes', LikeViewSet)
 post_router.register('comments', CommentViewSet)
 
-urlpatterns = [
-    path(),
-]
+# urlpatterns = [
+#     path(),
+# ]
