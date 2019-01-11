@@ -19,7 +19,14 @@ class CommentView(generics.GenericAPIView,
             return Response({'error' : 'No specific post is selected'})
 
     def patch(self, request, id):
-        return self.partial_update(request, id)
+        self.partial_update(request, id)
+        notification = Notification(user= User.objects.get(id = request.POST['user']), notification= 'edited a comment')
+        notification.save()
+        return Response({'status': 'success'})
 
     def delete(self, request, id):
-        return self.destroy(request, id)
+        self.destroy(request, id)
+        notification = Notification(user=User.objects.get(id=request.POST['user']), notification='deleted a comment')
+        notification.save()
+        return Response({'status': 'success'})
+
