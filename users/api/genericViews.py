@@ -4,9 +4,6 @@ from users.models import User
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-
-
-
 class ChangePasswordView(generics.UpdateAPIView):
     """
     An endpoint for changing password.

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     #package apps for mi_world
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_auth',
 ]
 
 MIDDLEWARE = [
