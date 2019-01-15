@@ -48,8 +48,18 @@ INSTALLED_APPS = [
     #package apps for mi_world
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_auth',
+    # 'rest_auth',
 ]
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework.authentication.TokenAuthentication'
+#     ),
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated'
+#     ),
+#  }
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
