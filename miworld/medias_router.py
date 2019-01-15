@@ -4,7 +4,7 @@ from django.urls import path
 
 medias_router = routers.DefaultRouter()
 
-medias_router.register('posts', ImageViewSet, base_name='posts')
+medias_router.register('medias', ImageViewSet, base_name='medias')
 
 # urlpatterns = [
 #     path(),
