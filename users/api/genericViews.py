@@ -1,4 +1,4 @@
-from rest_framework import generics, status
+from rest_framework import generics, status, views
 from .serializers import *
 from users.models import User
 from rest_framework.permissions import IsAuthenticated
@@ -34,3 +34,12 @@ class ChangePasswordView(generics.UpdateAPIView):
     @classmethod
     def get_extra_actions(cls):
         return []
+
+class RegistrationView(views.APIView):
+
+    def post(self, request, format='json'):
+        serializer = RegistrationSerializer(data= request.data)
+        if serializer.is_valid():
+            user = serializer.save()
+            if user:
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
