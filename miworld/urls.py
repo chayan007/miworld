@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from .router import router
+from .medias_router import medias_router
 from django.views.decorators.csrf import csrf_exempt
 from .post_router import post_router
 from posts.post_api import urls as post_api_urls
@@ -15,6 +16,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('post_api/', include(post_router.urls)),
+    path('media_api/', include(medias_router.urls)),
     path('api-token-auth/', views.obtain_auth_token, name='api-token-auth'),
     path('api/password/', ChangePasswordView.as_view(), name='passwords'),
     path('post/', include(post_api_urls)),
