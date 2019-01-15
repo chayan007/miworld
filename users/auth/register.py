@@ -1,11 +1,13 @@
-from rest_framework import generics
+from rest_framework import generics, views, status
 from rest_framework.response import Response
+from users.api.serializers import RegistrationSerializer
+from django.views.decorators.csrf import csrf_exempt
 from users.models import User
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny
 from rest_framework.authentication import TokenAuthentication
 
-class RegisterView(generics.CreateAPIView):
+class RegistrationView(generics.CreateAPIView):
     authentication_classes = TokenAuthentication
     permission_classes = AllowAny
 
@@ -21,3 +23,16 @@ class RegisterView(generics.CreateAPIView):
             'token': token.key
         })
 
+class RegisterView(views.APIView):
+
+    @csrf_exempt
+    def post(self, request):
+        serializer = RegistrationSerializer(data= request.data)
+        if serializer.is_valid():
+            user = serializer.save()
+            if user:
+                token = Token.objects.create(user=user)
+                return Response({
+                    'detail': 'User has been registered',
+                    'token': token.key
+                }, status=status.HTTP_201_CREATED)

@@ -37,12 +37,3 @@ class ChangePasswordView(generics.UpdateAPIView):
     def get_extra_actions(cls):
         return []
 
-class RegistrationView(views.APIView):
-
-    @csrf_exempt
-    def post(self, request):
-        serializer = RegistrationSerializer(data= request.data)
-        if serializer.is_valid():
-            user = serializer.save()
-            if user:
-                return Response(serializer.data, status=status.HTTP_201_CREATED)

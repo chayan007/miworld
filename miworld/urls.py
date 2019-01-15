@@ -9,7 +9,7 @@ from rest_framework.authtoken import views
 from users.auth.login import LoginView
 from users.auth.logout import LogoutView
 from users.auth.register import RegisterView
-from users.api.genericViews import ChangePasswordView, RegistrationView
+from users.api.genericViews import ChangePasswordView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +24,5 @@ urlpatterns = [
 
     path('login/', LoginView.as_view()),
     path('logout/', LogoutView.as_view()),
-    path('register/', csrf_exempt(RegistrationView.as_view())),
+    path('register/', csrf_exempt(RegisterView.as_view())),
 ]
