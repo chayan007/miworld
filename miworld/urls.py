@@ -1,13 +1,15 @@
 from django.contrib import admin
 from django.urls import path, include
 from .router import router
+from django.views.decorators.csrf import csrf_exempt
 from .post_router import post_router
 from posts.post_api import urls as post_api_urls
 from posts.comment_api import urls as comment_api_urls
 from rest_framework.authtoken import views
 from users.auth.login import LoginView
 from users.auth.logout import LogoutView
-from users.api.genericViews import ChangePasswordView
+from users.auth.register import RegisterView
+from users.api.genericViews import ChangePasswordView, RegistrationView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,7 +19,10 @@ urlpatterns = [
     path('api/password/', ChangePasswordView.as_view(), name='passwords'),
     path('post/', include(post_api_urls)),
     path('comment/', include(comment_api_urls)),
+    path('rest-auth/', include('rest_auth.urls')),
+
 
     path('login/', LoginView.as_view()),
     path('logout/', LogoutView.as_view()),
+    path('register/', csrf_exempt(RegistrationView.as_view())),
 ]

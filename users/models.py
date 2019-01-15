@@ -25,7 +25,7 @@ class Profile(models.Model):
         return self.user.first_name + ' ' + self.user.last_name
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
-        hapazat = self.user.first_name + ' ' + self.user.last_name
+        hapazat = self.user.username
         slug = slugify(hapazat)
         if self.slug != slug:
             self.slug = slug
@@ -34,7 +34,7 @@ class Profile(models.Model):
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
-        Profile.objects.create(user=instance)
+        Profile.objects.create(user=instance, slug=sender.username)
 
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):

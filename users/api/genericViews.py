@@ -1,8 +1,10 @@
 from rest_framework import generics, status, views
 from .serializers import *
-from users.models import User
-from rest_framework.permissions import IsAuthenticated
+from users.models import User, Profile
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
+from rest_framework.authentication import TokenAuthentication
 
 class ChangePasswordView(generics.UpdateAPIView):
     """
@@ -37,7 +39,8 @@ class ChangePasswordView(generics.UpdateAPIView):
 
 class RegistrationView(views.APIView):
 
-    def post(self, request, format='json'):
+    @csrf_exempt
+    def post(self, request):
         serializer = RegistrationSerializer(data= request.data)
         if serializer.is_valid():
             user = serializer.save()
