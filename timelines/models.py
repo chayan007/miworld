@@ -6,8 +6,8 @@ from medias.models import Image, Video
 
 class Actual_Post(models.Model):
     post = models.OneToOneField(Post, on_delete=models.CASCADE)
-    image = models.ForeignKey(Image, on_delete=models.CASCADE)
-    video = models.ForeignKey(Video, on_delete=models.CASCADE)
+    image = models.ForeignKey(Image, on_delete=models.CASCADE, null=True)
+    video = models.ForeignKey(Video, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.post.description[:20]
