@@ -1,7 +1,7 @@
 from rest_framework import generics, mixins
 from rest_framework.response import Response
 from .serializers import PostSerializer
-from posts.models import Post
+from posts.models import Post, Like
 from django.contrib.auth.models import User
 from notifications.models import Notification
 

@@ -11,6 +11,8 @@ from users.auth.login import LoginView
 from users.auth.logout import LogoutView
 from users.auth.register import RegisterView
 from users.api.genericViews import ChangePasswordView
+# from posts.post_api.generics import ActualPostView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -22,6 +24,7 @@ urlpatterns = [
     path('post/', include(post_api_urls)),
     path('comment/', include(comment_api_urls)),
     path('rest-auth/', include('rest_auth.urls')),
+    # path('posts/', ActualPostView.as_view(), name='posts'),
 
 
     path('login/', LoginView.as_view()),
