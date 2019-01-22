@@ -7,16 +7,16 @@ from posts.comment_api.serializers import CommentSerializer
 
 
 class ActualPostSerializer(serializers.ModelSerializer):
-    likes = LikeSerializer(many=True, read_only=True)
-    comments = CommentSerializer(many=True, read_only=True)
+    likes = LikeSerializer(many=True)
+    comments = CommentSerializer(many=True)
 
     class Meta:
         model = Actual_Post
         fields = '__all__'
 
 class APostSerializer(serializers.ModelSerializer):
-    likes = LikeSerializer(many=True, read_only=True)
-    comments = CommentSerializer(many=True, read_only=True)
+    likes = LikeSerializer(many=True)
+    comments = CommentSerializer(many=True)
 
 
     class Meta:

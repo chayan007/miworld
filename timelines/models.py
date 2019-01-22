@@ -25,4 +25,17 @@ def create_acutal_post(sender, instance, created, **kwargs):
     if created:
         Actual_Post.objects.get_or_create(post=instance)
 
+def add_likes(sender, **kwargs):
+    actual_post = Actual_Post.objects.get(post=kwargs['post'])
+    actual_post.likes = kwargs['instance']
+
+def add_comments(sender, instance, **kwargs):
+    actual_post = Actual_Post.objects.get(post=instance.post)
+    actual_post.comments = kwargs['instance']
+    
+
+
+
 post_save.connect(create_acutal_post, sender=Post)
+# post_save.connect(add_likes, sender=Like)
+# post_save.connect(add_comments, sender=Comment)

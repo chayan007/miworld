@@ -918,146 +918,172 @@ post_id</ColNames>
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <index id="230" parent="47" name="post_id">
+    <column id="230" parent="47" name="comments_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="231" parent="47" name="likes_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="232" parent="47" name="post_id">
       <ColNames>post_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="231" parent="47" name="timelines_actual_post_image_id_fcf93e05_fk_medias_image_id">
+    <index id="233" parent="47" name="timelines_actual_post_image_id_fcf93e05_fk_medias_image_id">
       <ColNames>image_id</ColNames>
     </index>
-    <index id="232" parent="47" name="timelines_actual_post_video_id_77bf81a8_fk_medias_video_id">
+    <index id="234" parent="47" name="timelines_actual_post_video_id_77bf81a8_fk_medias_video_id">
       <ColNames>video_id</ColNames>
     </index>
-    <key id="233" parent="47" name="PRIMARY">
+    <index id="235" parent="47" name="timelines_actual_post_comments_id_8a4b55d8_fk_posts_comment_id">
+      <ColNames>comments_id</ColNames>
+    </index>
+    <index id="236" parent="47" name="timelines_actual_post_likes_id_15ddce0a_fk_posts_like_id">
+      <ColNames>likes_id</ColNames>
+    </index>
+    <key id="237" parent="47" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="234" parent="47" name="post_id">
+    <key id="238" parent="47" name="post_id">
       <ColNames>post_id</ColNames>
       <UnderlyingIndexName>post_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="235" parent="47" name="timelines_actual_post_image_id_fcf93e05_fk_medias_image_id">
+    <foreign-key id="239" parent="47" name="timelines_actual_post_image_id_fcf93e05_fk_medias_image_id">
       <ColNames>image_id</ColNames>
       <RefSchemaName>miworld</RefSchemaName>
       <RefTableName>medias_image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="236" parent="47" name="timelines_actual_post_post_id_e663fbb5_fk_posts_post_id">
+    <foreign-key id="240" parent="47" name="timelines_actual_post_post_id_e663fbb5_fk_posts_post_id">
       <ColNames>post_id</ColNames>
       <RefSchemaName>miworld</RefSchemaName>
       <RefTableName>posts_post</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="237" parent="47" name="timelines_actual_post_video_id_77bf81a8_fk_medias_video_id">
+    <foreign-key id="241" parent="47" name="timelines_actual_post_video_id_77bf81a8_fk_medias_video_id">
       <ColNames>video_id</ColNames>
       <RefSchemaName>miworld</RefSchemaName>
       <RefTableName>medias_video</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="238" parent="48" name="id">
+    <foreign-key id="242" parent="47" name="timelines_actual_post_comments_id_8a4b55d8_fk_posts_comment_id">
+      <ColNames>comments_id</ColNames>
+      <RefSchemaName>miworld</RefSchemaName>
+      <RefTableName>posts_comment</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="243" parent="47" name="timelines_actual_post_likes_id_15ddce0a_fk_posts_like_id">
+      <ColNames>likes_id</ColNames>
+      <RefSchemaName>miworld</RefSchemaName>
+      <RefTableName>posts_like</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="244" parent="48" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="239" parent="48" name="display_id">
+    <column id="245" parent="48" name="display_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="240" parent="48" name="bio">
+    <column id="246" parent="48" name="bio">
       <Position>3</Position>
       <DataType>longtext|0</DataType>
     </column>
-    <column id="241" parent="48" name="user_id">
+    <column id="247" parent="48" name="user_id">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="242" parent="48" name="users_personal_display_id_72eda24b">
+    <index id="248" parent="48" name="users_personal_display_id_72eda24b">
       <ColNames>display_id</ColNames>
     </index>
-    <index id="243" parent="48" name="user_id">
+    <index id="249" parent="48" name="user_id">
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="244" parent="48" name="PRIMARY">
+    <key id="250" parent="48" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="245" parent="48" name="user_id">
+    <key id="251" parent="48" name="user_id">
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="246" parent="48" name="users_personal_display_id_72eda24b_fk_medias_image_id">
+    <foreign-key id="252" parent="48" name="users_personal_display_id_72eda24b_fk_medias_image_id">
       <ColNames>display_id</ColNames>
       <RefSchemaName>miworld</RefSchemaName>
       <RefTableName>medias_image</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="247" parent="48" name="users_personal_user_id_c4f57695_fk_auth_user_id">
+    <foreign-key id="253" parent="48" name="users_personal_user_id_c4f57695_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>miworld</RefSchemaName>
       <RefTableName>auth_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="248" parent="49" name="id">
+    <column id="254" parent="49" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="249" parent="49" name="gender">
+    <column id="255" parent="49" name="gender">
       <Position>2</Position>
       <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="250" parent="49" name="slug">
+    <column id="256" parent="49" name="slug">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="251" parent="49" name="birth_date">
+    <column id="257" parent="49" name="birth_date">
       <Position>4</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="252" parent="49" name="is_celeb">
+    <column id="258" parent="49" name="is_celeb">
       <Position>5</Position>
       <DataType>tinyint(1)|0</DataType>
     </column>
-    <column id="253" parent="49" name="is_premium">
+    <column id="259" parent="49" name="is_premium">
       <Position>6</Position>
       <DataType>tinyint(1)|0</DataType>
     </column>
-    <column id="254" parent="49" name="verification_id">
+    <column id="260" parent="49" name="verification_id">
       <Position>7</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="255" parent="49" name="user_id">
+    <column id="261" parent="49" name="user_id">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="256" parent="49" name="slug">
+    <index id="262" parent="49" name="slug">
       <ColNames>slug</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="257" parent="49" name="user_id">
+    <index id="263" parent="49" name="user_id">
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="258" parent="49" name="PRIMARY">
+    <key id="264" parent="49" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="259" parent="49" name="slug">
+    <key id="265" parent="49" name="slug">
       <ColNames>slug</ColNames>
       <UnderlyingIndexName>slug</UnderlyingIndexName>
     </key>
-    <key id="260" parent="49" name="user_id">
+    <key id="266" parent="49" name="user_id">
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="261" parent="49" name="users_profile_user_id_2112e78d_fk_auth_user_id">
+    <foreign-key id="267" parent="49" name="users_profile_user_id_2112e78d_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>miworld</RefSchemaName>
       <RefTableName>auth_user</RefTableName>

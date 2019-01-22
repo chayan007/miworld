@@ -21,18 +21,23 @@ class RegistrationView(generics.CreateAPIView):
         return Response({
             'detail': 'User has been registered',
             'token': token.key
-        })
+        }, status = status.HTTP_201_CREATED)
 
 class RegisterView(views.APIView):
 
     @csrf_exempt
     def post(self, request):
-        serializer = RegistrationSerializer(data= request.data)
-        if serializer.is_valid():
-            user = serializer.save()
-            if user:
-                token = Token.objects.create(user=user)
-                return Response({
-                    'detail': 'User has been registered',
-                    'token': token.key
-                }, status=status.HTTP_201_CREATED)
+        try:
+            serializer = RegistrationSerializer(data=request.data)
+            if serializer.is_valid():
+                user = serializer.save()
+                if user:
+                    token = Token.objects.create(user=user)
+                    return Response({
+                        'detail': 'User has been registered',
+                        'token': token.key
+                    }, status=status.HTTP_201_CREATED)
+        except:
+            return Response({
+                "error" : "Wrong API Call Error"
+            }, status=status.HTTP_400_BAD_REQUEST)
