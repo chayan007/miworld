@@ -35,15 +35,18 @@ class ActualPostSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def get_likes(self, obj):
-        like = Like.obj.filter(post=object).count()
+        like = Like.objects.filter(post=obj).count()
         print(like)
         return like
 
     def get_comments(self, obj):
-        comment = Comment.obj.filter(post=object).count()
+        comment = Comment.objects.filter(post=obj).count()
         print(comment)
         return comment
 
     def get_duration(self, obj):
-        duration = (now() - obj.created_at).days
-        return duration
+        if obj.created_at:
+            duration = (now() - obj.created_at).days
+            return duration
+        else:
+            return "Undefined"
