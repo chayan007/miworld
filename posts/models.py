@@ -11,6 +11,7 @@ class Post(models.Model):
     slug = models.SlugField(null= True, unique= True)
     task = models.CharField(max_length=200) #updated, uploaded, shared,etc..
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
+    created_at = models.DateField(auto_created=True, null=True)
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
         randomNum = int(random.random()*10000000000)
