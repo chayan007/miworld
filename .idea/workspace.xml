@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2e3e62-04bd-450b-ba19-ecd23996d94c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/videos/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos/api/viewsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/image_api/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/medias/image_api/viewsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miworld/post_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/miworld/post_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timelines/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timelines/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,13 +81,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miworld/post_router.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
               <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/timelines/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,7 +162,6 @@
         <option value="$PROJECT_DIR$/posts/post_api/generics.py" />
         <option value="$PROJECT_DIR$/miworld/urls.py" />
         <option value="$PROJECT_DIR$/timelines/api/serializers.py" />
-        <option value="$PROJECT_DIR$/timelines/models.py" />
         <option value="$PROJECT_DIR$/timelines/api/viewsets.py" />
         <option value="$PROJECT_DIR$/posts/post_api/urls.py" />
         <option value="$PROJECT_DIR$/users/auth/register.py" />
@@ -168,6 +175,7 @@
         <option value="$PROJECT_DIR$/medias/image_api/viewsets.py" />
         <option value="$PROJECT_DIR$/videos/api/viewsets.py" />
         <option value="$PROJECT_DIR$/miworld/post_router.py" />
+        <option value="$PROJECT_DIR$/timelines/models.py" />
       </list>
     </option>
   </component>
@@ -196,18 +204,12 @@
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
               <item name="miworld" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
+              <item name="miworld" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
               <item name="miworld" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
-              <item name="image_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miworld" type="462c0819:PsiDirectoryNode" />
-              <item name="miworld" type="462c0819:PsiDirectoryNode" />
+              <item name="timelines" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
@@ -348,12 +350,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546494404122</updated>
       <workItem from="1548662306038" duration="1243000" />
-      <workItem from="1548664463354" duration="8561000" />
+      <workItem from="1548664463354" duration="8796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9804000" />
+    <option name="totallyTimeSpent" value="10039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -567,16 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timelines/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#28#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
@@ -785,6 +777,16 @@
           <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timelines/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
