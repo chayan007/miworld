@@ -4,6 +4,11 @@ import os, random, string
 # Create your models here.
 
 
+def random_name(instance):
+    name = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(32)])
+    return name
+
+
 class Video(models.Model):
     title = models.TextField(default=random_name)
     description = models.TextField(null=True)
@@ -26,8 +31,3 @@ class Video(models.Model):
 
     def __str__(self):
         return self.video.name
-
-
-def random_name(instance):
-    name = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(32)])
-    return name
