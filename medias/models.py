@@ -21,28 +21,6 @@ class Image(models.Model):
         return self.image.size
 
 
-class Video(models.Model):
-    video = models.FileField(upload_to='videos/')
-    snap1 = models.ImageField(upload_to='video_snaps/', null= True)
-    snap2 = models.ImageField(upload_to='video_snaps/', null= True)
-    snap3 = models.ImageField(upload_to='video_snaps/', null= True)
-    cover = models.ImageField(upload_to='video_snaps/', null= True)
-    post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE, null=True)
-
-    def size(self):
-        return self.video.size
-
-    def extension(self):
-        name, extension = os.path.splitext(self.video.name)
-        return extension
-
-    def name(self):
-        return os.path.basename(self.video.name)
-
-    def __str__(self):
-        return self.video.name
-
-
 class Audio(models.Model):
     name = models.CharField(max_length=30 ,blank= True)
     audio = models.FileField()
