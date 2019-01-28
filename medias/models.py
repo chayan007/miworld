@@ -9,7 +9,7 @@ class Image(models.Model):
     post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return self.name
+        return self.image.name
 
     def extension(self):
         name, extension = os.path.splitext(self.image.name)
@@ -41,7 +41,7 @@ class Video(models.Model):
 
 
     def __str__(self):
-        return self.name
+        return self.video.name
 
 class Audio(models.Model):
     name = models.CharField(max_length=30 ,blank= True)
