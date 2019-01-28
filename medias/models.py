@@ -2,7 +2,6 @@ from django.db import models
 from posts.models import Post
 import os
 
-# Create your models here.
 
 class Image(models.Model):
     image = models.ImageField(upload_to='images/')
@@ -20,6 +19,7 @@ class Image(models.Model):
 
     def size(self):
         return self.image.size
+
 
 class Video(models.Model):
     video = models.FileField(upload_to='videos/')
@@ -39,9 +39,9 @@ class Video(models.Model):
     def name(self):
         return os.path.basename(self.video.name)
 
-
     def __str__(self):
         return self.video.name
+
 
 class Audio(models.Model):
     name = models.CharField(max_length=30 ,blank= True)

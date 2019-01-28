@@ -12,14 +12,14 @@ class ActualPost(generics.GenericAPIView,
     def get(self, request, id=None):
         limit = Post.objects.all().count()
         response_json = {}
-        for i in range(1,limit):
-            post = Post.objects.get(id= i)
+        for i in range(1, limit):
+            post = Post.objects.get(id=i)
             likes = Like.objects.get(post=post)
             comments = Comment.objects.get(post=post)
             response_json.update({
-                "post" : post,
-                "likes" : likes,
-                "comments" : comments
+                "post": post,
+                "likes": likes,
+                "comments": comments
             })
         return Response(response_json, 200)
 

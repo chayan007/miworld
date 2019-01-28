@@ -6,6 +6,7 @@ from medias.image_api.serializers import ImageSerializer
 from django.utils.timezone import now
 from django.core import serializers as core_serializer
 
+
 class PostSerializer(serializers.ModelSerializer):
     images = ImageSerializer
 
@@ -17,15 +18,6 @@ class PostSerializer(serializers.ModelSerializer):
             'url': {'lookup_field': 'slug'}
         }
 
-# class ActualPostSerializer(serializers.ModelSerializer):
-#     likes = serializers.SerializerMethodField()
-#
-#     class Meta:
-#         model = Post
-#         fields = '__all__'
-#
-#     def get_likes(self, object):
-#         return Like.objects.filter(post=object).count()
 
 class ActualPostSerializer(serializers.ModelSerializer):
     #posts = serializers.SerializerMethodField(method_name=get_post)
@@ -64,7 +56,6 @@ class ActualPostSerializer(serializers.ModelSerializer):
             return  image_serializer
         else:
             return "Undefined"
-
 
     def get_videos(self, obj):
         video = Video.objects.filter(post=obj).first()
