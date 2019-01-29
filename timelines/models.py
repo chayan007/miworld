@@ -21,7 +21,7 @@ class Actual_Post(models.Model):
         return images
 
 
-def create_acutal_post(sender, instance, created, **kwargs):
+def create_actual_post(sender, instance, created, **kwargs):
     if created:
         Actual_Post.objects.get_or_create(post=instance)
 

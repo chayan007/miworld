@@ -8,5 +8,4 @@ router.register('products', ProductModelViewSet)
 
 router.register('users', UserViewSet)
 router.register('profiles', ProfileViewSet)
-
 router.register('followers', FollowerViewSet)

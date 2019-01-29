@@ -4,7 +4,7 @@ import os, random, string
 # Create your models here.
 
 
-def random_name(instance):
+def random_name():
     name = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(32)])
     return name
 
