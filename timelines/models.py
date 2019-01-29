@@ -36,4 +36,4 @@ def add_comments(sender, instance, **kwargs):
     actual_post.comments = kwargs['instance']
 
 
-post_save.connect(create_acutal_post, sender=Post)
+post_save.connect(create_actual_post, sender=Post)

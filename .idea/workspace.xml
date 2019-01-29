@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2e3e62-04bd-450b-ba19-ecd23996d94c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miworld/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/miworld/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miworld/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/miworld/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timelines/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timelines/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +59,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miworld/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2151">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miworld/router.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
@@ -81,13 +88,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timelines/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="297">
+              <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/miworld/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1548778375700" expanded="true" signature="1244:1384" ph="..." />
               </folding>
             </state>
           </provider>
@@ -146,7 +166,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/posts/post_api/viewsets.py" />
         <option value="$PROJECT_DIR$/posts/post_api/generics.py" />
-        <option value="$PROJECT_DIR$/miworld/urls.py" />
         <option value="$PROJECT_DIR$/timelines/api/serializers.py" />
         <option value="$PROJECT_DIR$/timelines/api/viewsets.py" />
         <option value="$PROJECT_DIR$/posts/post_api/urls.py" />
@@ -163,8 +182,9 @@
         <option value="$PROJECT_DIR$/posts/post_api/serializers.py" />
         <option value="$PROJECT_DIR$/miworld/settings.py" />
         <option value="$PROJECT_DIR$/miworld/router.py" />
-        <option value="$PROJECT_DIR$/timelines/models.py" />
         <option value="$PROJECT_DIR$/videos/models.py" />
+        <option value="$PROJECT_DIR$/timelines/models.py" />
+        <option value="$PROJECT_DIR$/miworld/urls.py" />
       </list>
     </option>
   </component>
@@ -199,12 +219,6 @@
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
               <item name="miworld" type="462c0819:PsiDirectoryNode" />
               <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miworld" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-              <item name="post_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
@@ -340,12 +354,12 @@
       <updated>1546494404122</updated>
       <workItem from="1548662306038" duration="1243000" />
       <workItem from="1548664463354" duration="9402000" />
-      <workItem from="1548771744619" duration="2042000" />
+      <workItem from="1548771744619" duration="2344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12687000" />
+    <option name="totallyTimeSpent" value="12989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -353,7 +367,7 @@
     <layout>
       <window_info id="Structure" order="0" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16018766" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16018766" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -363,7 +377,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.26941177" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49570817" visible="true" weight="0.15249267" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49570817" visible="true" weight="0.2536657" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -585,17 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miworld/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="41" selection-start-line="26" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1548065991358" expanded="true" signature="1168:1308" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timelines/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -740,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miworld/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miworld/router.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -774,12 +770,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/miworld/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2151">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/timelines/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="297">
+          <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miworld/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1548778375700" expanded="true" signature="1244:1384" ph="..." />
           </folding>
         </state>
       </provider>

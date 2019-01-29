@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 from django.urls import path, include
 from .router import router
 from .medias_router import medias_router
@@ -30,4 +32,4 @@ urlpatterns = [
     path('login/', LoginView.as_view()),
     path('logout/', LogoutView.as_view()),
     path('register/', csrf_exempt(RegisterView.as_view())),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
