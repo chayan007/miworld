@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django.http import HttpResponse
+from datetime import datetime
 from posts.models import Post, Like, Comment
 from medias.models import Image
 from medias.image_api.serializers import ImageSerializer
@@ -42,7 +43,7 @@ class ActualPostSerializer(serializers.ModelSerializer):
 
     def get_duration(self, obj):
         if obj.created_at:
-            duration = (now() - obj.created_at).days
+            duration = (datetime.now().date() - obj.created_at).days
             return duration
         else:
             return "Undefined"

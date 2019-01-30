@@ -4,7 +4,6 @@ from posts.post_api.viewsets import ActualPostViewset
 from posts.comment_api.viewsets import CommentViewSet
 from videos.api.viewsets import VideoViewSet
 from rest_framework import routers
-from django.urls import path
 
 post_router = routers.DefaultRouter()
 

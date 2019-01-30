@@ -5,11 +5,12 @@ from medias.image_api.serializers import ImageSerializer
 from .serializers import PostSerializer, Post
 from posts.models import Like, Comment
 
+
 class ActualPost(generics.GenericAPIView,
                  mixins.ListModelMixin,
                  mixins.RetrieveModelMixin):
 
-    def get(self, request, id=None):
+    def get(self, request, id = None):
         limit = Post.objects.all().count()
         response_json = {}
         for i in range(1, limit):
