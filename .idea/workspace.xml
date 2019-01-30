@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb2e3e62-04bd-450b-ba19-ecd23996d94c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miworld/post_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/miworld/post_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/post_api/customAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/post_api/customAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/post_api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/post_api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/post_api/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/post_api/viewsets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/post_api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="322">
+              <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -418,12 +415,12 @@
       <workItem from="1548662306038" duration="1243000" />
       <workItem from="1548664463354" duration="9402000" />
       <workItem from="1548771744619" duration="2969000" />
-      <workItem from="1548829365687" duration="1469000" />
+      <workItem from="1548829365687" duration="1964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15083000" />
+    <option name="totallyTimeSpent" value="15578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -857,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/post_api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="322">
+          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

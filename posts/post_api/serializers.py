@@ -25,7 +25,7 @@ class ActualPostSerializer(serializers.ModelSerializer):
     likes = serializers.SerializerMethodField()
     comments = serializers.SerializerMethodField()
     duration = serializers.SerializerMethodField()
-    images = serializers.SerializerMethodField()
+    images = serializers.SerializerMethodField(many=True)
 
     class Meta:
         model = Post
@@ -52,7 +52,7 @@ class ActualPostSerializer(serializers.ModelSerializer):
         image = Image.objects.filter(post=obj).first()
         if image != None:
             image = Image.objects.get(post=obj)
-            image_serializer = core_serializer.serialize('json', [image,])
-            return  image_serializer
+            image_serializer = core_serializer.serialize('json', [image, ])
+            return image_serializer
         else:
             return "Undefined"
