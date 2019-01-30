@@ -7,15 +7,15 @@ import random
 
 
 class Post(models.Model):
-    description = models.TextField(null= True, blank= True)
-    views = models.IntegerField(null= True, default=0)
-    slug = models.SlugField(null= True, unique= True)
-    task = models.CharField(max_length=200) #updated, uploaded, shared,etc..
+    description = models.TextField(null=True, blank=True)
+    views = models.IntegerField(null=True, default=0)
+    slug = models.SlugField(null=True, unique=True)
+    task = models.CharField(max_length=200)  #updated, uploaded, shared,etc..
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now=True, null=True)
+    created_at = models.DateTimeField(auto_now=True)
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
-        random_num = int(random.random()*10000000000)
+        random_num = int(random.random() * 10000000000)
         hapazat = self.user.username + ' ' + str(random_num)
         slug = slugify(hapazat)
         if self.slug != slug:
@@ -24,6 +24,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.user.username + ' posted ' + self.slug
+
 
 class Like(models.Model):
     post = models.ForeignKey(Post, to_field='id', on_delete=models.CASCADE)
@@ -35,6 +36,7 @@ class Like(models.Model):
 
     def __str__(self):
         return self.user.username + 'has like the post' + self.post.slug
+
 
 class Comment(models.Model):
     comment = models.TextField()
