@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/post_api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="56">
+              <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -117,8 +117,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/posts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            <state relative-caret-position="322">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -419,12 +422,12 @@
       <workItem from="1548662306038" duration="1243000" />
       <workItem from="1548664463354" duration="9402000" />
       <workItem from="1548771744619" duration="2969000" />
-      <workItem from="1548829365687" duration="10732000" />
+      <workItem from="1548829365687" duration="11125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24346000" />
+    <option name="totallyTimeSpent" value="24739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -851,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/post_api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="56">
+          <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -861,8 +864,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        <state relative-caret-position="322">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
