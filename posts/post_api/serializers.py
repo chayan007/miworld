@@ -4,7 +4,6 @@ from datetime import datetime
 from posts.models import Post, Like, Comment
 from medias.models import Image
 from medias.image_api.serializers import ImageSerializer
-from django.utils.timezone import now
 from django.core import serializers as core_serializer
 
 
@@ -25,7 +24,7 @@ class ActualPostSerializer(serializers.ModelSerializer):
     likes = serializers.SerializerMethodField()
     comments = serializers.SerializerMethodField()
     duration = serializers.SerializerMethodField()
-    images = serializers.SerializerMethodField(many=True)
+    images = serializers.SerializerMethodField(read_only=True, )
 
     class Meta:
         model = Post

@@ -5,6 +5,7 @@ import random
 
 # Create your models here.
 
+
 class Post(models.Model):
     description = models.TextField(null= True, blank= True)
     views = models.IntegerField(null= True, default=0)
@@ -14,8 +15,8 @@ class Post(models.Model):
     created_at = models.DateField(auto_created=True, null=True)
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
-        randomNum = int(random.random()*10000000000)
-        hapazat = self.user.username + ' ' + str(randomNum)
+        random_num = int(random.random()*10000000000)
+        hapazat = self.user.username + ' ' + str(random_num)
         slug = slugify(hapazat)
         if self.slug != slug:
             self.slug = slug
