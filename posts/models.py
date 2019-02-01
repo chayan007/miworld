@@ -1,9 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
+import datetime
 import random
 
-# Create your models here.
+
+def default_date():
+    return datetime.datetime.now()
 
 
 class Post(models.Model):
@@ -12,7 +15,7 @@ class Post(models.Model):
     slug = models.SlugField(null=True, unique=True)
     task = models.CharField(max_length=200)  #updated, uploaded, shared,etc..
     user = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
         random_num = int(random.random() * 10000000000)
