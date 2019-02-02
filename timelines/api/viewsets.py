@@ -8,4 +8,3 @@ class ActualPostViewSet(viewsets.ModelViewSet):
 class APostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = APostSerializer
-

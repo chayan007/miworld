@@ -5,6 +5,7 @@ from posts.comment_api.viewsets import CommentViewSet
 from videos.api.viewsets import VideoViewSet
 from rest_framework import routers
 
+
 post_router = routers.DefaultRouter()
 
 post_router.register('posts', PostViewSet)

@@ -13,6 +13,7 @@ from users.auth.login import LoginView
 from users.auth.logout import LogoutView
 from users.auth.register import RegisterView
 from users.api.genericViews import ChangePasswordView
+from posts.comment_api.generics import CommentView
 # from posts.post_api.generics import ActualPostView
 
 
@@ -26,6 +27,7 @@ urlpatterns = [
     path('post/', include(post_api_urls)),
     path('comment/', include(comment_api_urls)),
     path('rest-auth/', include('rest_auth.urls')),
+    path('actual-comments', CommentView.as_view(), name='actual-comments'),
     # path('posts/', ActualPostView.as_view(), name='posts'),
 
 

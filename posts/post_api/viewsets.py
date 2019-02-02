@@ -12,3 +12,8 @@ class PostViewSet(viewsets.ModelViewSet):
 class ActualPostViewset(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = ActualPostSerializer
+
+
+class ActualDetailPostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = ActualDetailPostSerializer

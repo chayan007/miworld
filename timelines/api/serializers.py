@@ -9,6 +9,7 @@ from posts.comment_api.serializers import CommentSerializer
 class ActualPostSerializer(serializers.ModelSerializer):
     likes = LikeSerializer(many=True)
     comments = CommentSerializer(many=True)
+    images =
 
     class Meta:
         model = Actual_Post

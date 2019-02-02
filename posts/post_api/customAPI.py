@@ -23,5 +23,3 @@ class ActualPost(generics.GenericAPIView,
                 "comments": comments
             })
         return Response(response_json, 200)
-
-
