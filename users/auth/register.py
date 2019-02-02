@@ -37,7 +37,15 @@ class RegisterView(views.APIView):
                         'detail': 'User has been registered',
                         'token': token.key
                     }, status=status.HTTP_201_CREATED)
+                else:
+                    return Response({
+                        "error": "Wrong API Call Error"
+                    })
+            else:
+                return Response({
+                    "error": "Wrong API Call Error"
+                })
         except:
             return Response({
-                "error" : "Wrong API Call Error"
-            }, status=status.HTTP_400_BAD_REQUEST)
+                "error": "Wrong API Call Error"
+            })
