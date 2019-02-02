@@ -5,6 +5,7 @@ from django.core import exceptions
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.validators import UniqueValidator
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -14,6 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
             'url': {'lookup_field': 'username'}
         }
         exclude = ('password',)
+
 
 class ProfileSerializer(serializers.ModelSerializer):
     user = UserSerializer()
@@ -25,6 +27,7 @@ class ProfileSerializer(serializers.ModelSerializer):
             'url': {'lookup_field': 'slug'}
         }
         fields = '__all__'
+
 
 class PasswordSerializer(serializers.Serializer):
     old_password = serializers.CharField(required=True)
@@ -54,6 +57,7 @@ class LoginSerializer(serializers.Serializer):
             msg = "Must provide username and password"
             raise exceptions.ValidationError(msg)
         return data
+
 
 class RegistrationSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(

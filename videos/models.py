@@ -18,6 +18,7 @@ class Video(models.Model):
     snap3 = models.ImageField(upload_to='video_snaps/', null=True)
     cover = models.ImageField(upload_to='video_snaps/', null=True)
     views = models.IntegerField(default=0)
+    category = models.CharField(max_length=50, null=True)
 
     def size(self):
         return self.video.size
