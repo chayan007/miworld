@@ -1,10 +1,7 @@
 from rest_framework import viewsets
-from .serializers import ActualPostSerializer, Actual_Post, Post, APostSerializer
+from .serializers import ActualPostSerializer, Actual_Post, Post
+
 
 class ActualPostViewSet(viewsets.ModelViewSet):
     queryset = Actual_Post.objects.all()
     serializer_class = ActualPostSerializer
-
-class APostViewSet(viewsets.ModelViewSet):
-    queryset = Post.objects.all()
-    serializer_class = APostSerializer
