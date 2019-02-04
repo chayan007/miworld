@@ -78,3 +78,9 @@ class RegistrationSerializer(serializers.ModelSerializer):
         fields = ('id', 'username', 'email', 'password')
 
 
+class LikerSerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+
+    class Meta:
+        model = Profile
+        fields = ('slug', 'user')

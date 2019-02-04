@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2e3e62-04bd-450b-ba19-ecd23996d94c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/posts/like_api/generics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miworld/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/miworld/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/like_api/generics.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/like_api/generics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/api/serializers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/like_api/generics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+            <state relative-caret-position="253">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users/api/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -170,7 +178,6 @@
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/medias/models.py" />
         <option value="$PROJECT_DIR$/miworld/settings.py" />
-        <option value="$PROJECT_DIR$/users/api/serializers.py" />
         <option value="$PROJECT_DIR$/videos/models.py" />
         <option value="$PROJECT_DIR$/users/api/genericViews.py" />
         <option value="$PROJECT_DIR$/users/api/viewsets.py" />
@@ -186,6 +193,7 @@
         <option value="$PROJECT_DIR$/timelines/views.py" />
         <option value="$PROJECT_DIR$/miworld/urls.py" />
         <option value="$PROJECT_DIR$/posts/like_api/generics.py" />
+        <option value="$PROJECT_DIR$/users/api/serializers.py" />
       </list>
     </option>
   </component>
@@ -231,6 +239,17 @@
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
               <item name="miworld" type="462c0819:PsiDirectoryNode" />
               <item name="timelines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miworld" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miworld" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -367,12 +386,12 @@
       <workItem from="1549083499763" duration="7374000" />
       <workItem from="1549121055654" duration="1821000" />
       <workItem from="1549203569010" duration="6302000" />
-      <workItem from="1549265403381" duration="3420000" />
+      <workItem from="1549265403381" duration="3832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47445000" />
+    <option name="totallyTimeSpent" value="47857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1058" extended-state="6" />
@@ -639,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -817,11 +829,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/like_api/generics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        <state relative-caret-position="253">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/api/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
         </state>
       </provider>
     </entry>
