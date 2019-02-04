@@ -16,6 +16,7 @@ from users.api.genericViews import ChangePasswordView
 from posts.comment_api.generics import CommentView
 # from posts.post_api.generics import ActualPostView
 from timelines.views import actual_post_view
+from posts.like_api.generics import get_liker
 
 
 urlpatterns = [
@@ -30,6 +31,7 @@ urlpatterns = [
     path('rest-auth/', include('rest_auth.urls')),
     path('actual-comments', CommentView.as_view(), name='actual-comments'),
     path('actual-posts/<int:id>', actual_post_view, name='actual-comments'),
+    path('get-liker/<int:id>', get_liker, name='actual-likers'),
     # path('posts/', ActualPostView.as_view(), name='posts'),
 
 
