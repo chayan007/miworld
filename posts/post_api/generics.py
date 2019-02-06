@@ -4,6 +4,7 @@ from .serializers import PostSerializer
 from posts.models import Post, Like
 from django.contrib.auth.models import User
 from notifications.models import Notification
+from rest_framework.permissions import IsAuthenticated
 
 
 class PostView(generics.GenericAPIView,
@@ -13,6 +14,7 @@ class PostView(generics.GenericAPIView,
                mixins.UpdateModelMixin,
                mixins.DestroyModelMixin
                ):
+    permission_classes = (IsAuthenticated, )
     serializer_class = PostSerializer
     queryset = Post.objects.all()
     lookup_field = 'id'

@@ -4,11 +4,13 @@ from medias.models import Image
 from medias.image_api.serializers import ImageSerializer
 from .serializers import PostSerializer, Post
 from posts.models import Like, Comment
+from rest_framework.permissions import IsAuthenticated
 
 
 class ActualPost(generics.GenericAPIView,
                  mixins.ListModelMixin,
                  mixins.RetrieveModelMixin):
+    permission_classes = (IsAuthenticated, )
 
     def get(self, request, id = None):
         limit = Post.objects.all().count()
