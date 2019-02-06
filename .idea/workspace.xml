@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2e3e62-04bd-450b-ba19-ecd23996d94c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/image_api/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/medias/image_api/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/followers/api/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/followers/api/viewsets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +45,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/medias/image_api/viewsets.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
               <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/followers/api/viewsets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -86,7 +97,6 @@
         <option value="$PROJECT_DIR$/products/api/viewsets.py" />
         <option value="$PROJECT_DIR$/followers/api/serializers.py" />
         <option value="$PROJECT_DIR$/products/api/serializers.py" />
-        <option value="$PROJECT_DIR$/followers/api/viewsets.py" />
         <option value="$PROJECT_DIR$/followers/models.py" />
         <option value="$PROJECT_DIR$/notifications/admin.py" />
         <option value="$PROJECT_DIR$/posts/comment_api/urls.py" />
@@ -130,6 +140,7 @@
         <option value="$PROJECT_DIR$/miworld/router.py" />
         <option value="$PROJECT_DIR$/medias/models.py" />
         <option value="$PROJECT_DIR$/medias/image_api/viewsets.py" />
+        <option value="$PROJECT_DIR$/followers/api/viewsets.py" />
       </list>
     </option>
   </component>
@@ -158,13 +169,13 @@
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
               <item name="miworld" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
+              <item name="followers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
               <item name="miworld" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
-              <item name="image_api" type="462c0819:PsiDirectoryNode" />
+              <item name="followers" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miworld" type="b2602c69:ProjectViewProjectNode" />
@@ -329,12 +340,12 @@
       <workItem from="1549121055654" duration="1821000" />
       <workItem from="1549203569010" duration="6302000" />
       <workItem from="1549265403381" duration="7262000" />
-      <workItem from="1549437445179" duration="801000" />
+      <workItem from="1549437445179" duration="885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52088000" />
+    <option name="totallyTimeSpent" value="52172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -392,9 +403,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/posts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/comment_api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -792,6 +800,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/followers/api/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
