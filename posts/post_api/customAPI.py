@@ -14,7 +14,7 @@ class ActualPost(generics.GenericAPIView,
     permission_classes = (IsAuthenticated, )
     authentication_classes = (TokenAuthentication, )
 
-    def get(self, request, id = None):
+    def get(self, request, id=None):
         limit = Post.objects.all().count()
         response_json = {}
         for i in range(1, limit):
