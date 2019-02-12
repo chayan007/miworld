@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2e3e62-04bd-450b-ba19-ecd23996d94c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/videos/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,11 +129,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
               <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/videos/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -194,7 +205,6 @@
         <option value="$PROJECT_DIR$/timelines/views.py" />
         <option value="$PROJECT_DIR$/miworld/urls.py" />
         <option value="$PROJECT_DIR$/users/api/serializers.py" />
-        <option value="$PROJECT_DIR$/videos/models.py" />
         <option value="$PROJECT_DIR$/notifications/api/serializers.py" />
         <option value="$PROJECT_DIR$/notifications/models.py" />
         <option value="$PROJECT_DIR$/notifications/api/generics.py" />
@@ -214,6 +224,7 @@
         <option value="$PROJECT_DIR$/videos/api/viewsets.py" />
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/story/models.py" />
+        <option value="$PROJECT_DIR$/videos/models.py" />
       </list>
     </option>
   </component>
@@ -407,12 +418,12 @@
       <workItem from="1549720375201" duration="1572000" />
       <workItem from="1549862562043" duration="3316000" />
       <workItem from="1549951648142" duration="375000" />
-      <workItem from="1549952150257" duration="1139000" />
+      <workItem from="1549952150257" duration="1224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69744000" />
+    <option name="totallyTimeSpent" value="69829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1384" height="746" extended-state="6" />
@@ -673,16 +684,6 @@
     <entry file="file://$PROJECT_DIR$/videos/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medias/image_api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -884,6 +885,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
