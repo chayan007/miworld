@@ -1,8 +1,6 @@
-from rest_framework import views, mixins, generics
+from rest_framework import mixins, generics
 from rest_framework.response import Response
-from medias.models import Image
-from medias.image_api.serializers import ImageSerializer
-from .serializers import PostSerializer, Post
+from .serializers import Post
 from posts.models import Like, Comment
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication

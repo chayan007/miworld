@@ -1,10 +1,8 @@
-from rest_framework import generics, status, views
+from rest_framework import generics, status
 from .serializers import *
-from users.models import User, Profile
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from users.models import User
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from rest_framework.authentication import TokenAuthentication
 
 
 class ChangePasswordView(generics.UpdateAPIView):
