@@ -2,6 +2,7 @@ from products.api.viewsets import ProductModelViewSet
 from users.api.viewsets import *
 from followers.api.viewsets import FollowerViewSet
 from notifications.api.viewsets import NotificationViewSet
+from story.api.viewsets import StoryViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
@@ -11,3 +12,4 @@ router.register('users', UserViewSet)
 router.register('profiles', ProfileViewSet)
 router.register('followers', FollowerViewSet)
 router.register('notifications', NotificationViewSet)
+router.register('story', StoryViewSet)
