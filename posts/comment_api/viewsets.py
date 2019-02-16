@@ -5,6 +5,6 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class CommentViewSet(viewsets.ModelViewSet):
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer

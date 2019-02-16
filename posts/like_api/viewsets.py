@@ -5,6 +5,6 @@ from rest_framework.permissions import IsAuthenticated
 
 
 class LikeViewSet(viewsets.ModelViewSet):
-    permission_classes = (IsAuthenticated, )
+    # permission_classes = (IsAuthenticated, )
     queryset = Like.objects.all()
     serializer_class = LikeSerializer
