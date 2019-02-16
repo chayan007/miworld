@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'followers',
     'timelines',
     'videos',
+    'story',
 
     #package apps for mi_world
     'rest_framework',
