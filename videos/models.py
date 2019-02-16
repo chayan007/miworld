@@ -20,7 +20,7 @@ class Video(models.Model):
     cover = models.ImageField(upload_to='video_snaps/', null=True)
     views = models.IntegerField(default=0)
     category = models.CharField(max_length=50, null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def size(self):
         return self.video.size
