@@ -40,7 +40,7 @@ class ChangePasswordView(generics.UpdateAPIView):
 
 
 @api_view(['GET', ])
-def get_story_by_user(request, username=None):
+def get_id(request, username=None):
     story = User.objects.get(username=username)
     user_serializer = UserSerializer(many=False)
     response_json = {

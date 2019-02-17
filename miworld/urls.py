@@ -14,7 +14,7 @@ from users.auth.logout import LogoutView
 from users.auth.register import RegisterView
 from users.api.genericViews import ChangePasswordView
 from posts.comment_api.generics import CommentView
-# from posts.post_api.generics import ActualPostView
+from users.api.genericViews import get_id
 from timelines.views import actual_post_view
 from posts.like_api.generics import get_liker
 from story.api.generics import get_story_by_user
@@ -34,6 +34,7 @@ urlpatterns = [
     path('actual-posts/<int:id>', actual_post_view, name='actual-comments'),
     path('get-liker/<int:id>', get_liker, name='actual-likers'),
     path('get-story/<int:id>', get_story_by_user, name='actual-story'),
+    path('get-user/<int:id>', get_id, name='actual-story'),
     # path('posts/', ActualPostView.as_view(), name='posts'),
 
 
