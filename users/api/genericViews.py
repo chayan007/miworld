@@ -1,8 +1,10 @@
 from rest_framework import generics, status
 from .serializers import *
 from users.models import User
+from rest_framework.decorators import api_view
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from django.http.response import JsonResponse
 
 
 class ChangePasswordView(generics.UpdateAPIView):
@@ -36,3 +38,12 @@ class ChangePasswordView(generics.UpdateAPIView):
     def get_extra_actions(cls):
         return []
 
+
+@api_view(['GET', ])
+def get_story_by_user(request, username=None):
+    story = User.objects.get(username=username)
+    user_serializer = UserSerializer(many=False)
+    response_json = {
+        "user": user_serializer.data
+    }
+    return JsonResponse(response_json)
