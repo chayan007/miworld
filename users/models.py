@@ -8,6 +8,7 @@ import random
 
 # Create your models here.
 
+
 class Profile(models.Model):
     user = models.OneToOneField(User, to_field='id', on_delete=models.CASCADE)
     gender = models.CharField(max_length=2, choices=

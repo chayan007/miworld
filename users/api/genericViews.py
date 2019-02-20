@@ -41,8 +41,8 @@ class ChangePasswordView(generics.UpdateAPIView):
 
 @api_view(['GET', ])
 def get_id(request, username=None):
-    story = User.objects.get(username=username)
-    user_serializer = UserSerializer(many=False)
+    user = User.objects.get(username=username)
+    user_serializer = UserSerializer(user, many=False)
     response_json = {
         "user": user_serializer.data
     }
