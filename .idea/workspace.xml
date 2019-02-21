@@ -85,11 +85,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/miworld/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+            <state relative-caret-position="331">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1550731325360" expanded="true" signature="1783:1923" ph="..." />
+                <marker date="1550731527419" expanded="true" signature="1776:1916" ph="..." />
               </folding>
             </state>
           </provider>
@@ -434,12 +434,12 @@
       <workItem from="1550508885507" duration="593000" />
       <workItem from="1550555508820" duration="2836000" />
       <workItem from="1550674910014" duration="1262000" />
-      <workItem from="1550731225436" duration="138000" />
+      <workItem from="1550731225436" duration="289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87473000" />
+    <option name="totallyTimeSpent" value="87624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -901,11 +901,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/miworld/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="331">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1550731325360" expanded="true" signature="1783:1923" ph="..." />
+            <marker date="1550731527419" expanded="true" signature="1776:1916" ph="..." />
           </folding>
         </state>
       </provider>
