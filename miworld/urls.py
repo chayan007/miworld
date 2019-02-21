@@ -34,7 +34,7 @@ urlpatterns = [
     path('actual-posts/<int:id>', actual_post_view, name='actual-comments'),
     path('get-liker/<int:id>', get_liker, name='actual-likers'),
     path('get-story/<int:id>', get_story_by_user, name='actual-story'),
-    path('get-user/<int:id>', get_id, name='actual-story'),
+    path('get-user/<string:username>', get_id, name='actual-story'),
     # path('posts/', ActualPostView.as_view(), name='posts'),
 
 
