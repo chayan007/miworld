@@ -74,7 +74,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
 
     @csrf_exempt
     def create(self, validated_data):
-        user = User.objects.create_user(validated_data['username'], validated_data['email'], validated_data['password'], validated_data['first_name'], validated_data['last_name'])
+        user = User.objects.create_user(username=validated_data['username'], first_name=validated_data['first_name'], last_name=validated_data['last_name'], email=validated_data['email'], password=validated_data['password'])
         return user
 
     class Meta:
