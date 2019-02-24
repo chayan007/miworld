@@ -61,13 +61,16 @@ class LoginSerializer(serializers.Serializer):
 
 class RegistrationSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(
-        required= True,
+        required=True,
         validators=[UniqueValidator(queryset=User.objects.all())]
     )
     username = serializers.CharField(
+        required=True,
         validators=[UniqueValidator(queryset=User.objects.all())]
     )
-    password = serializers.CharField(min_length=8)
+    password = serializers.CharField(required=True, min_length=8)
+    first_name = serializers.CharField(max_length=20)
+    last_name = serializers.CharField(max_length=20)
 
     @csrf_exempt
     def create(self, validated_data):
